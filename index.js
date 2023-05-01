@@ -86,3 +86,7 @@ app.delete("/medicamentos/:id", (req, res) => {
   medicamentos.splice(medicamentoIndex, 1);
   return res.status(204).send();
 });
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
